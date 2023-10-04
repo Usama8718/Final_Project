@@ -1,4 +1,5 @@
 import 'package:avatars/avatars.dart';
+import 'package:budget_app/Screens/MainScreen/Home.dart';
 import 'package:budget_app/Screens/PaymentMethod/PaymentHistory.dart';
 import 'package:budget_app/Screens/ProfilePage/Profile.dart';
 import 'package:flutter/material.dart';
@@ -127,7 +128,9 @@ class _TransectionState extends State<Transection> {
                             icon: Icon(Icons.business_outlined),
                           ),
                           TextButton(
-                              onPressed: () {}, child: Text("Business Card"))
+                            onPressed: () {},
+                            child: Text("Business Card"),
+                          ),
                         ],
                       ),
                     ),
@@ -174,7 +177,15 @@ class _TransectionState extends State<Transection> {
                       children: [
                         Icon(Icons.settings),
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                             Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    Home(),
+                              ),
+                            );
+                          },
                           child: Text("Settings"),
                         ),
                       ],
