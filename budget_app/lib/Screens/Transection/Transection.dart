@@ -15,12 +15,14 @@ class Transection extends StatefulWidget {
 
 class _TransectionState extends State<Transection> {
   List<dynamic> name = [1, 2, 3, 4, 6, 7, 8, 8];
-
-  set _darkmode(bool _darkmode) {
+  
+  set darkMode(bool darkMode) {
     setState(() {
-      this._darkmode = !_darkmode;
+      this._darkMode = darkMode;
     });
   }
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -160,7 +162,7 @@ class _TransectionState extends State<Transection> {
                             value: false,
                             onChanged: (bool value) {
                               setState(() {
-                                // darkMode = !value;
+                                darkMode = !value;
                               });
                             },
                           ),
