@@ -17,9 +17,9 @@ class _TransectionState extends State<Transection> {
   List<dynamic> name = [1, 2, 3, 4, 6, 7, 8, 8];
   
   set darkMode(bool darkMode) {
-    setState(() {
-      this._darkMode = darkMode;
-    });
+    // setState(() {
+    //   this._darkMode = darkMode;
+    // });
   }
 
   
